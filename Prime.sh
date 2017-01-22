@@ -14,6 +14,10 @@ do
 done
 if [ $counter -gt 2 ] ; then
 	echo "Number is not prime."
+elif [ $input -le 0 ]; then
+	echo "Number is not prime."
+elif [ $input -eq 1 ]; then
+	echo "Number is not prime."
 else
 	echo "Number is prime."
 fi
