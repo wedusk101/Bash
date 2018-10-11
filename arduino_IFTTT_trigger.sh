@@ -7,7 +7,7 @@ do
 	echo $input
 	if [[ "$input" == "448"* ]] ; then
 		echo | curl -X GET http://maker.ifttt.com/trigger/{motion_detected}/with/key/cgSqIa1NrlKwEtyZi5SA07
-		exit
+		exit # comment out this line to prevent the script from stopping once it has fired
 	fi
 done
 
